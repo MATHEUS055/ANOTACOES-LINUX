@@ -1,0 +1,34 @@
+FAZENDO UM SITES
+
+#Instalar o Apache2
+	apt-get update
+	apt-get install apache2
+
+#Acessar a pasta sites-available
+	cd /etc/apache2/sites-available/
+
+#Editar o arquivo de configuração padrão
+	cp 000-default.conf <NOME DO MEU SITE>.conf
+	vim <NOME DO MEU SITE>.conf
+
+#Editar os seguintes parâmetros
+	ServerName <NOME DO MEU SITE>
+	Server Admin webmaster@<NOME DO MEU SITE>
+	documentRoot /var/www/<NOME DO MEU SITE>/html/
+
+#Ativar o site
+	a2ensite <NOME DO MEU SITE>
+
+#Efetuar o reload do Apache2
+	systemctl reload apache2
+
+#Criar o diretório do site
+	mkdir -p /var/www/<NOME DO MEU SITE>/html
+
+#Criar o index.html do site
+	vim /var/www/<NOME DO MEU SITE>/html/index.html
+
+
+-----------------------------------------------------
+
+RENOMEAR
