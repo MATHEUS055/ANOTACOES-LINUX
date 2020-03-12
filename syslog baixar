@@ -1,0 +1,3 @@
+apt install syslog-ng - 
+
+vim /etc/syslog-ng/syslog-ng.conf - 
