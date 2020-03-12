@@ -1,0 +1,16 @@
+             (cat /var/log/auth.log|grep sshd  - verificar o que foi feito via ssh)
+
+
+  LOG NO LINUX 
+tudo que voce faz, cria um registro no sistema operacional
+serve para ver erros, troubleshooting, ver o que foi feito no seu sistema linux
+
+"no log deve ter quando onde o que e quem- acessou"
+
+/var /log - guardas os registro do linux
+
+/ususerx(usuario que vc quer entrar)/.ssh/known-hosts
+
+
+
+
